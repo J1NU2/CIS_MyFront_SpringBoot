@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace : DAO(Repository) 인터페이스명 -->
+<!-- id : DAO(Repository) 메서드명 -->
+<mapper namespace="com.cis.project.repository.IF_TestRepository">
+    <insert id="insertDBTest" parameterType="com.cis.project.dto.TestDTO">
+        INSERT INTO test VALUES (#{name}, #{id})
+    </insert>
+</mapper>
